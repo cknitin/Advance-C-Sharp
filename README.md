@@ -65,3 +65,22 @@ int a17 = funcMethod(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16);
 Console.WriteLine(a17);
 
 ```
+
+# Action:
+#### Action can take any type of input but can return void output only, means it simply doesn't return anything , it just takes input and processes it as per the definition.
+
+#### but does not return any value, it can take up to 16 paramters
+
+```
+Action<string> res = () => Console.WriteLine("Hello I am James");
+
+```
+
+```
+Action<int, int,int, int, int, int, int, int, int, int, int, int, int, int, int, int> actionMethod = (int a1, int a2, int a3, int a4, int a5, int a6, int a7, int a8,
+        int a9, int a10, int a11, int a12, int a13, int a14, int a15, int a16) => {
+    Console.WriteLine(a1 + a2);
+};
+
+actionMethod(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16);
+```
