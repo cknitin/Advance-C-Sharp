@@ -56,8 +56,8 @@ Func<int,double> area = x => 3.14 * x * x;
 ```
 
 ```
-Func<int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int> funcMethod = (int a1, int a2, int a3, int a4, int a5, int a6, int a7, int a8,
-    int a9, int a10, int a11, int a12, int a13, int a14, int a15, int a16) => {
+Func<int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int> funcMethod = (int a1, int a2, int a3, int a4, int a5, 
+int a6, int a7, int a8, int a9, int a10, int a11, int a12, int a13, int a14, int a15, int a16) => {
     return a2 + a3;
 };
 
@@ -77,10 +77,24 @@ Action<string> res = () => Console.WriteLine("Hello I am James");
 ```
 
 ```
-Action<int, int,int, int, int, int, int, int, int, int, int, int, int, int, int, int> actionMethod = (int a1, int a2, int a3, int a4, int a5, int a6, int a7, int a8,
-        int a9, int a10, int a11, int a12, int a13, int a14, int a15, int a16) => {
+Action<int, int,int, int, int, int, int, int, int, int, int, int, int, int, int, int> actionMethod = (int a1, int a2, int a3, int a4, int a5,
+int a6, int a7, int a8, int a9, int a10, int a11, int a12, int a13, int a14, int a15, int a16) => {
     Console.WriteLine(a1 + a2);
 };
 
 actionMethod(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16);
+```
+
+# Predicate : 
+#### Predicate can take any type of input but it can only return bool output.
+
+```
+predicate<string> x => x.Length > 5;
+predicate<int> x => x % 2 == 0;
+```
+
+```
+Predicate<string> isUpper = delegate (string s) { return s.Equals(s.ToUpper()); };
+bool result = isUpper("hello world!!");
+Console.WriteLine(result);
 ```
