@@ -66,7 +66,7 @@ Console.WriteLine(a17);
 
 ```
 
-# Action:
+# Action :
 #### Action can take any type of input but can return void output only, means it simply doesn't return anything , it just takes input and processes it as per the definition.
 
 #### but does not return any value, it can take up to 16 paramters
