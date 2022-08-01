@@ -34,5 +34,13 @@ int result = cal(10,20);
 
 
 ## Lambda Expressions
-#### lambda expressions are shorthand way of defining inline delegates
+#### Lambda expressions are shorthand way of defining inline delegates,
+In order to define an inline delegate we can use Anonymous methods , with anonymous method we do not need to create an external method which saves some time.,Lambda expression takes this concept to one step further, and makes the delegate even more simpler as shown below.
+
+```
+Public delegate int Calculate(int x,int y);
+
+Calculate c= (x,y) => x + y;
+
+```
 
