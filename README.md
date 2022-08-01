@@ -99,7 +99,8 @@ bool result = isUpper("hello world!!");
 Console.WriteLine(result);
 ```
 
-> Partitioning Operators In Linq
+
+# > Partitioning Operators In Linq
 
 # Take
 #### Take() standard query operator simply returns the first n items from a collection.
