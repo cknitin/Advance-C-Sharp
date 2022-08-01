@@ -129,3 +129,11 @@ public static bool condition(string str)
     
             
 ```
+
+# Skip
+#### Skip() extension method simply skips the first n items from a collection and returns rest of the items(collection).
+
+```
+string[] countries = {"India","Australia","USA","Japan","Nepal","England","America","Afganistan","Sri Lanka"};
+var TopFiveCountries= countries.skip(5);
+```
