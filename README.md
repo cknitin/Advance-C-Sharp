@@ -99,6 +99,7 @@ bool result = isUpper("hello world!!");
 Console.WriteLine(result);
 ```
 
+<br/>
 
 > # Partitioning Operators In Linq
 
