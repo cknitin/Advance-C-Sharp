@@ -18,3 +18,21 @@ void IamSuperHero(string name)
 
 ```
 
+## Anonymous Method
+#### Anonymous methods are the methods without a name, just the body.
+
+```
+Public delegate int Calculate(int x,int y);
+
+calculate cal = delegate(int x,int y )
+{
+    return x+y;
+} 
+
+int result = cal(10,20);
+```
+
+
+## Lambda Expressions
+#### lambda expressions are shorthand way of defining inline delegates
+
