@@ -44,3 +44,24 @@ Calculate c= (x,y) => x + y;
 
 ```
 
+# Func , predicate and Action
+#### These are referred as generic delegates
+
+# Func : 
+### Func can take any type of input and can return any type of output, it can take up to 16 paramters
+
+```
+Func<double,double> area = x => x * x;
+Func<int,double> area = x => 3.14 * x * x;
+```
+
+```
+Func<int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int> funcMethod = (int a1, int a2, int a3, int a4, int a5, int a6, int a7, int a8,
+    int a9, int a10, int a11, int a12, int a13, int a14, int a15, int a16) => {
+    return a2 + a3;
+};
+
+int a17 = funcMethod(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16);
+Console.WriteLine(a17);
+
+```
