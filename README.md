@@ -19,7 +19,7 @@ void IamSuperHero(string name)
 ```
 
 ## Anonymous Method
-#### Anonymous methods are the methods without a name, just the body.
+#### Anonymous methods are the methods without a name, just the body. To define an inline delegate we can use Anonymous methods , with anonymous method we do not need to create an external method which saves some time
 
 ```
 Public delegate int Calculate(int x,int y);
