@@ -98,3 +98,32 @@ Predicate<string> isUpper = delegate (string s) { return s.Equals(s.ToUpper()); 
 bool result = isUpper("hello world!!");
 Console.WriteLine(result);
 ```
+
+> Partitioning Operators In Linq
+
+# Take
+#### Take() standard query operator simply returns the first n items from a collection.
+
+```
+string[] countries = {"India","Australia","Pakistan","Japan","Nepal","England","America","Afganistan","Sri Lanka"};
+var TopFiveCountries= countries.Take(5);
+```
+
+# TakeWhile
+#### TakeWhile() operator simply returns items from a collection until the specified condition becomes true , TakeWhile() operator accepts a Func generic delegate.
+
+```
+string[] countries = { "India", "Australia", "Pakistan", "Japan", "Nepal" };
+var res = countries.TakeWhile(condition);
+
+public static bool condition(string str)
+{
+    if (str.Length <= 5)
+    {
+         return true;
+    }
+    return false;
+}
+    
+            
+```
