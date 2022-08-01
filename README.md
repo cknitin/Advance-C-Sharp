@@ -5,7 +5,7 @@
 
 <code>
     
-`'delegate void WhoAmIDel(string name);
+``delegate void WhoAmIDel(string name);
 
 ``void IamSuperHero(string name)
 ``{
