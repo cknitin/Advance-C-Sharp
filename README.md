@@ -137,3 +137,21 @@ public static bool condition(string str)
 string[] countries = {"India","Australia","USA","Japan","Nepal","England","America","Afganistan","Sri Lanka"};
 var TopFiveCountries= countries.skip(5);
 ```
+
+# SkipWhile
+#### SkipWhile () operator skips items from a collection until the specified condition becomes true and then returns the remaining items from the collection
+
+```
+string[] countries = { "India", "Australia", "Pakistan", "Japan", "Nepal" };
+var res = countries.SkipWhile(condition);
+
+public static bool condition(string str)
+{
+      if (str.Length <= 7)
+      {
+          return true;
+      }
+      return false;
+}
+```
+
