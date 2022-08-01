@@ -5,12 +5,12 @@
 
 <code>
     
-delegate void WhoAmIDel(string name);
+'delegate void WhoAmIDel(string name);
 
-void IamSuperHero(string name)
-{
-    Console.WriteLine($"I am {name}, I am Super Hero.");
-}
+'void IamSuperHero(string name)
+'{
+'    Console.WriteLine($"I am {name}, I am Super Hero.");
+'}
 
 </code>
 
