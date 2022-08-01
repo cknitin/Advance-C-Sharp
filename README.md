@@ -115,7 +115,7 @@ var TopFiveCountries= countries.Take(5);
 #### TakeWhile() operator simply returns items from a collection until the specified condition becomes true , TakeWhile() operator accepts a Func generic delegate.
 
 ```
-string[] countries = { "India", "Australia", "Pakistan", "Japan", "Nepal" };
+string[] countries = { "India", "Australia", "Sri Lanka", "Japan", "Nepal" };
 var res = countries.TakeWhile(condition);
 
 public static bool condition(string str)
